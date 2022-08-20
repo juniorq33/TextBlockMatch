@@ -1,7 +1,8 @@
 const textareaA = document.getElementById('blockA');
 const textareaB = document.getElementById('blockB');
 const btn = document.getElementById('btnResult');
-const result = document.getElementById('result');
+const resultAdd = document.getElementById('resultAdd');
+const resultRemove = document.getElementById('resultRemove');
 const tx = document.getElementsByTagName("textarea");
 for (let i = 0; i < tx.length; i++) {
   tx[i].setAttribute("style", "height:" + (tx[i].scrollHeight) + "px;overflow-y:hidden;");
@@ -24,11 +25,21 @@ btn.addEventListener('click', function handleClick() {
 
   if(needToAdd.length == 0 && needToRemove.length == 0)
   {
-    result.textContent = 'Blocks are equal';
+    alert("**** Blocks Are Equal ****");
   }
   else
   {
-    result.textContent = 'Need to Add ' + needToAdd + 'Need to Remove ' + needToRemove;
+    if(needToAdd.length > 0)
+    {
+      resultAdd.textContent = needToAdd;
+      resultAdd.style.display = 'block';
+    }
+
+    if(needToRemove.length > 0)
+    {
+      resultRemove.textContent = needToRemove;
+      resultRemove.style.display = 'block';
+    }
   }
 
 });

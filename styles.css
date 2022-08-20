@@ -1,3 +1,29 @@
 body{
     background-color: azure;
 }
+
+#resultDiv
+{
+    flex: auto;
+}
+
+#resultAdd
+{
+    border: green;
+    border-width: 3px;
+    border-style: solid;
+    display: none;
+}
+
+#resultRemove
+{
+    border: red;
+    border-width: 3px;
+    border-style: solid;
+    display: none;
+}
+
+#MainApp
+{
+    text-align: center;
+}
