@@ -38,6 +38,25 @@ textarea
     padding: 20px;
 }
 
+#btnResult
+{
+    
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
 #compareDiv
 {
     display: flex;
