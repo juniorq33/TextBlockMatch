@@ -31,13 +31,26 @@ btn.addEventListener('click', function handleClick() {
   {
     if(needToAdd.length > 0)
     {
-      resultAdd.textContent = needToAdd;
+      resultAdd.innerHTML = "";
+
+      needToAdd.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        resultAdd.appendChild(li);
+      });
       resultAdd.style.display = 'block';
     }
 
     if(needToRemove.length > 0)
     {
-      resultRemove.textContent = needToRemove;
+
+      resultRemove.innerHTML = "";
+      
+      needToRemove.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        resultRemove.appendChild(li);
+      });
       resultRemove.style.display = 'block';
     }
   }
@@ -101,4 +114,11 @@ function checkIfValueExists(arrValid, arr)
 
     return result;
 
+}
+
+function clearList(listPage)
+{
+  for (var i = 0; (li = listPage[i]); i++) {
+    li.parentNode.removeChild(li);
+  }
 }
