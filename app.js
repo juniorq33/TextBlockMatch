@@ -25,6 +25,10 @@ btn.addEventListener('click', function handleClick() {
 
   if(needToAdd.length == 0 && needToRemove.length == 0)
   {
+    resultAdd.innerHTML = "";
+    resultRemove.innerHTML = "";
+    resultAdd.style.display = 'none';
+    resultRemove.style.display = 'none';
     alert("**** Blocks Are Equal ****");
   }
   else
@@ -45,7 +49,7 @@ btn.addEventListener('click', function handleClick() {
     {
 
       resultRemove.innerHTML = "";
-      
+
       needToRemove.forEach((item) => {
         let li = document.createElement("li");
         li.innerText = item;

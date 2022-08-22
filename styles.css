@@ -5,6 +5,7 @@ body{
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 @keyframes gradient {
@@ -25,6 +26,8 @@ textarea
 {
     height: 200px;
     width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
 }
 
 #commands
@@ -40,7 +43,7 @@ textarea
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
     align-items: stretch;
     padding: 10px;
 }
@@ -58,9 +61,9 @@ textarea
     border: #23a6d5;
     border-width: 3px;
     border-style: solid;
-    width: 350px;
+    width: 300px;
     list-style-type: none;
-    background-color: #23d5ab;
+    background-color: white;
     padding: 1px;
     display: none;
 }
@@ -70,9 +73,9 @@ textarea
     border: #e73c7e;
     border-width: 3px;
     border-style: solid;
-    width: 350px;
+    width: 300px;
     list-style-type: none;
-    background-color: #ee7752;
+    background-color: white;
     padding: 1px;
     display: none;
 }
